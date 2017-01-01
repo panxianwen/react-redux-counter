@@ -15,14 +15,14 @@ import React from 'react';
 export default class Counter extends React.Component {
 
     render(){
-        let { value, actions } = this.props;
+        let { value, increaseActions } = this.props;
         console.info(this.props)
 
         return (
             <div>
                 <h1>Simplest redux + react example</h1>
                 <span>{value}</span>
-                <button onClick={actions.increaseAction}>Increase</button>
+                <button onClick={increaseActions.increaseAction}>Increase</button>
             </div>
         );
     }

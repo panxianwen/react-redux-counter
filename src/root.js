@@ -14,10 +14,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import Index from './containers/index';
 import App from './containers/app';
 import configureStore from './store/configureStore';
+import rootSage from './sagas/index';
 
 const store = configureStore();
+
+//run root saga
+store.runSaga(rootSage);
+
 class Root extends React.Component {
     render(){
         return(

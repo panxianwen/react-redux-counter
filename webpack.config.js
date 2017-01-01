@@ -22,6 +22,18 @@ module.exports = {
       loaders: ['react-hot', 'babel'],
       exclude: /node_modules/,
       include: __dirname
+    },{
+      test: /(fontawesome-webfont|glyphicons-halflings-regular)\.(woff|woff2|ttf|eot|svg)($|\?)/,
+      loader: 'url?limit=1024&name=fonts/[name].[hash].[ext]'
+    }, {
+      test: /\.(css|less)$/,
+      loader: 'style!css!'
+    },{
+      test: /\.(jpg|png)$/,
+      loader: "url?limit=8192"
+    },{
+      test: /\.json$/,
+      loader: 'json'
     }]
   }
 };
