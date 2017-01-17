@@ -14,17 +14,29 @@
 import React from 'react';
 export default class InfoQuery extends React.Component {
 
-    render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            list: []
+        }
+    }
+    componentDidMount() {
         let { num, list, infoActions } = this.props;
         console.info(this.props)
+        this.setState({
+            list: list,
+            infoActions: infoActions
+        })
+        {JSON.stringify(list.data)}
+    }
+    render(){
+        console.info(this.state.list)
         return (
             <div>
                 <h4>Redux-saga fetch example</h4>
-                <button onClick={infoActions.requestInfoQuery}>Fetch</button><br/>
-                {num}
-                {JSON.stringify(list.data)}
+                <button onClick={this.props.infoActions.requestInfoQuery}>Fetch</button><br/>
                 {
-                    /*list.map(function (str, index) {
+                    this.state.list.map(function (str, index) {
                             return (
                                 <div className={`rt-full col-${index}`} >
                                     <div className="rt-left ">{str.ord}</div>
@@ -33,7 +45,7 @@ export default class InfoQuery extends React.Component {
                                 </div>
                             )
                         }
-                    )*/
+                    )
                 }
             </div>
         );

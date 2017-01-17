@@ -17,7 +17,23 @@ export function requestInfoQuery(phoneNum) {
     return {
         type: types.REQUEST_INFO_QUERY,
         phoneNum: '18515350934',
-        infoList: []
+        infoList: [{
+            "data": {
+                "personInfo": {
+                    "name": "张鹏",
+                    "gender": "男",
+                    "age": "35",
+                    "phone": "13049394650",
+                    "idcard": "1301301980382811940",
+                    "belongToPhoneNum": "北京",
+                    "model": "iphone6s",
+                    "weixinID": "未知",
+                    "taobaoID": "未知",
+                    "qqID": "未知",
+                    "weiboID": "未知"
+                }
+            }
+        }]
     }
 }
 
