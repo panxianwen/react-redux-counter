@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start server.js --name ks-demo",
-    "pmlist": "pm2 list",
+    "list": "pm2 list",
     "monit": "pm2 monit",
     "stop": "pm2 delete all",
     "logs": "pm2 logs"
@@ -45,6 +45,7 @@
     "babel-runtime": "^6.18.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "react-hot-loader": "^1.3.0",
+    "underscore": "^1.8.3",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   }

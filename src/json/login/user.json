@@ -1,0 +1,39 @@
+[{
+  "data": [
+    {
+      "username":"guest",
+      "password":"guest!Q@W#E",
+      "phone":"18600693939"
+    },
+    {
+      "username":"unicom",
+      "password":"unicom1q2w3e",
+      "phone":"18600693939"
+    },
+    {
+      "username":"test",
+      "password":"test1q2w3e",
+      "phone":"18515350934"
+    },
+    {
+      "username":"gaopeng",
+      "password":"123456",
+      "phone":"18600693939"
+    },
+    {
+      "username":"pengge",
+      "password":"123456",
+      "phone":"15568418001"
+    },
+    {
+      "username":"shiwenhong",
+      "password":"123456",
+      "phone":"18601250738"
+    },
+    {
+      "username":"menglei",
+      "password":"123456",
+      "phone":"18610117676"
+    }
+  ]
+}]
